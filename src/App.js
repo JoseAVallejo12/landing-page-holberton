@@ -1,24 +1,20 @@
-import logo from './logo.svg';
 import './App.css';
+import Button from '@mui/material/Button';
+import AppMenu from './components/app-menu/AppMenu';
+import { CarouselComponent } from './components/carousel/Carousel';
+
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <section>
+        <AppMenu />
+        <CarouselComponent />
+      </section>
+      <section className='about'>
+        <Button>Click me</Button>
+      </section>
+    </>
   );
 }
 
