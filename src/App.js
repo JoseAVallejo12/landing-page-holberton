@@ -1,20 +1,19 @@
 import './App.css';
 import Button from '@mui/material/Button';
-import AppMenu from './components/app-menu/AppMenu';
-import { CarouselComponent } from './components/carousel/Carousel';
-
+import Hero from './pages/Hero';
+import theme from './theme';
+import { ThemeProvider } from '@mui/material/styles';
 
 function App() {
   return (
-    <>
+    <ThemeProvider theme={theme}>
       <section>
-        <AppMenu />
-        <CarouselComponent />
+        <Hero />
       </section>
       <section className='about'>
         <Button>Click me</Button>
       </section>
-    </>
+    </ThemeProvider>
   );
 }
 
