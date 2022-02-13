@@ -8,25 +8,21 @@ export const menu = {
     icon: 'info',
     path: '/about',
   }, {
-    name: 'Contact',
-    icon: 'contact_phone',
-    path: '/contact',
+    name: 'Portfolio',
+    icon: 'work',
+    path: '/portfolio',
+  }, {
+    name: 'Projects',
+    icon: 'precision_manufacturing',
+    path: '/projects',
   }, {
     name: 'Blog',
     icon: 'library_books',
     path: '/blog',
   }, {
-    name: 'Portfolio',
-    icon: 'work',
-    path: '/portfolio',
-  }, {
-    name: 'Resume',
-    icon: 'description',
-    path: '/resume',
-  }, {
-    name: 'Projects',
-    icon: 'precision_manufacturing',
-    path: '/projects',
+    name: 'Contact',
+    icon: 'contact_phone',
+    path: '/contact',
   }],
   socialOptions: [{
     name: 'Facebook',

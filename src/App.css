@@ -1,0 +1,57 @@
+/* Global materia override styles */
+a:-webkit-any-link {
+  text-decoration: none;
+}
+.app_menu {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  z-index: 1;
+  background-color: transparent;
+  background-image: linear-gradient(to right, #f83600 0%, #f9d423 100%);
+}
+
+.home {
+  background-color: rgb(76, 139, 194);
+  height: 100vh;
+  width: 100vw;
+  padding-top: 50px;
+  background-image: linear-gradient(to right, #f83600 0%, #f9d423 100%);
+}
+
+.about {
+  background-color: aliceblue;
+  height: 100vh;
+  width: 100vw;
+  padding-top: 50px;
+}
+.contact {
+  background-color: #c29364;
+  height: 100vh;
+  width: 100vw;
+  padding-top: 50px;
+}
+.blog {
+  background-color: #797067;
+  height: 100vh;
+  width: 100vw;
+  padding-top: 50px;
+}
+.portafolio {
+  background-color: #5c4023;
+  height: 100vh;
+  width: 100vw;
+  padding-top: 50px;
+}
+.projects {
+  background-color: #5e5c5a;
+  height: 100vh;
+  width: 100vw;
+  padding-top: 50px;
+}
+.resume {
+  background-color: #38332e;
+  height: 100vh;
+  width: 100vw;
+  padding-top: 50px;
+}

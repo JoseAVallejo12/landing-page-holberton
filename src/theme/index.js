@@ -22,6 +22,21 @@ export default createTheme({
     },
   },
   components: {
+    MuiButton: {
+      styleOverrides: {
+        root: {
+          color: colorPalette.text,
+        },
+      }
+    },
+    MuiAppBar: {
+      styleOverrides: {
+        root: {
+          backgroundColor: 'transparent',
+          boxShadow: 'none',
+        },
+      },
+    },
     MuiBottomNavigation: {
       styleOverrides: {
         root: {
@@ -32,9 +47,6 @@ export default createTheme({
     MuiBottomNavigationAction: {
       styleOverrides: {
         root: {
-          color: colorPalette.text,
-        },
-        selected: {
           color: colorPalette.text,
         },
       },

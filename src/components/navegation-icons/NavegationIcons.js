@@ -13,7 +13,7 @@ import ListItemText from '@mui/material/ListItemText';
 
 
 
-export function NavegationIcons() {
+export default function NavegationIcons() {
   const [anchorEl, setAnchorEl] = useState(null);
   const open = Boolean(anchorEl);
   const handleClick = (event) => {

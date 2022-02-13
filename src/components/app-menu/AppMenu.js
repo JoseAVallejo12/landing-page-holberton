@@ -8,8 +8,10 @@ import Button from '@mui/material/Button';
 import Drawer from '@mui/material/Drawer';
 import { drawerMenu } from './drawerMenu';
 import { Squash as Hamburger } from 'hamburger-react';
-import { NavegationIcons } from '../navegation-icons/NavegationIcons';
+import NavegationIcons from '../navegation-icons/NavegationIcons';
 import { menu } from '../../utils/constants/menu';
+import NavTabs from '../nav-tabs/NavTabs';
+
 
 
 const pages = ['Products', 'Pricing', 'Blog'];
@@ -49,9 +51,16 @@ const AppMenu = () => {
     setAnchorElUser(null);
   };
 
+  function a11yProps(index) {
+    return {
+      id: `simple-tab-${index}`,
+      'aria-controls': `simple-tabpanel-${index}`,
+    };
+  }
+
   return (
     <Box>
-      <AppBar position="sticky">
+      <AppBar position="sticky" sx={{ boxShadow: 0, bgcolor: 0 }} enableColorOnDark>
         <Container maxWidth="xl">
           <Toolbar disableGutters>
             <Typography
@@ -82,16 +91,7 @@ const AppMenu = () => {
               LOGO
             </Typography>
             <Box sx={{ flexGrow: 1, display: { xs: 'none', md: 'flex' } }}>
-              {menu.options.map((option) => (
-                <Button
-                  variant="outlined"
-                  key={option.name}
-                  onClick={handleCloseNavMenu}
-                  sx={{ my: 2, color: 'white', display: 'block' }}
-                >
-                  {option.name}
-                </Button>
-              ))}
+              <NavTabs />
             </Box>
 
             <Box sx={{ display: { md: 'block', xs: 'none' } }} >
