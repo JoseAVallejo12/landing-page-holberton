@@ -1,0 +1,48 @@
+.projects_main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 95%;
+}
+.projects_top {
+    display: flex;
+    align-items: center;
+    margin-top: 1vh;
+    margin-bottom: 2vh;
+}
+.projects_icon {
+    width: 40px;
+    padding-top: 10vh;
+}
+.projects_company {
+    padding-top: 10vh;
+    margin-left: 10px;
+    font-size: 20px;
+    font-weight: 300;
+}
+.projects_read {
+    text-align: justify;
+    font-size: 12px;
+    margin-bottom: 1vh;
+}
+.projects_carousel {
+    margin-top: 20px;
+    width: 100%;
+    height: 60%;
+}
+
+@media only screen and (min-width: 600px) {
+    .projects_icon {
+        width: 60px;
+    }
+    .projects_company {
+        font-size: 34px;
+    }
+    .projects_read {
+        font-size: 20px;
+    }
+}
+
+@media only screen and (min-width: 1024px) {
+    
+}
