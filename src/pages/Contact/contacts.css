@@ -1,0 +1,35 @@
+.contact_cards {
+    padding-top: 11vh;
+    height: 85vh;
+}
+.contact_cards_title {
+    font-size: 23px;
+    font-weight: 400;
+    color: white;
+    text-align: center;
+    margin-bottom: 3vh;
+}
+.contact_cards_wrapper {
+    overflow-y: auto;
+    height: 48vh;
+    padding: 2px;
+}
+.contact_cards_title span {
+    color: black;
+    font-weight: 300;
+}
+.contact_map {
+    width: 100%;
+}
+.contact_iframe {
+    margin-top: 2vh;
+    width: 100%;
+    height: 30vh;
+}
+
+@media only screen and (min-width: 600px) {
+    .contact_cards_wrapper {
+        display: flex;
+        flex-wrap: wrap;
+    }
+}
