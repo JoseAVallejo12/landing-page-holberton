@@ -25,7 +25,7 @@ export default function NavegationIcons() {
   return (
     <React.Fragment>
       <Box sx={{ display: 'flex', alignItems: 'center', textAlign: 'center' }}>
-        <Tooltip title="Account settings">
+        {/* <Tooltip title="Account settings">
           <IconButton
             onClick={handleClick}
             size="small"
@@ -38,7 +38,7 @@ export default function NavegationIcons() {
               <IconsApp name="comment" />
             </Avatar>
           </IconButton>
-        </Tooltip>
+        </Tooltip> */}
       </Box>
       <Menu
         anchorEl={anchorEl}

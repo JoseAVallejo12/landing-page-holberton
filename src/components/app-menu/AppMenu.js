@@ -11,6 +11,8 @@ import { Squash as Hamburger } from 'hamburger-react';
 import NavegationIcons from '../navegation-icons/NavegationIcons';
 import { menu } from '../../utils/constants/menu';
 import NavTabs from '../nav-tabs/NavTabs';
+import logo1 from '../../assets/img/logo01.png'
+import './appmenu.css'
 
 
 
@@ -69,7 +71,7 @@ const AppMenu = () => {
               component="div"
               sx={{ mr: 2, display: { xs: 'none', md: 'flex' } }}
             >
-              LOGO
+              <img src={logo1} style={{width: '230px'}} />
             </Typography>
 
             <Box sx={{ flexGrow: 1, display: { xs: 'flex', md: 'none' } }}>
@@ -88,7 +90,7 @@ const AppMenu = () => {
               component="div"
               sx={{ flexGrow: 1, display: { xs: 'flex', md: 'none' } }}
             >
-              LOGO
+              <img src={logo1} style={{width: '160px'}} />
             </Typography>
             <Box sx={{ flexGrow: 1, display: { xs: 'none', md: 'flex' } }}>
               <NavTabs />
