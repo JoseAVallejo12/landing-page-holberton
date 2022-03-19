@@ -15,7 +15,6 @@ import CommentIcon from '@mui/icons-material/Comment';
 
 export const IconsApp = ({ name }) => {
 
-
   const navegationIcons = {
     facebook: <FacebookIcon />,
     linkedin: <LinkedInIcon />,
