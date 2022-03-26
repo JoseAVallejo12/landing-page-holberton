@@ -10,11 +10,11 @@ export default function About() {
   return (
     <div className='about_div'>
 
-      <img src={wave_top} alt="wave_top" className='about_wave_top'/>
+      <img src={wave_top} alt="wave_top" className='about_wave_top' />
 
       <div className='about_care'>
         <h2 className='about_title'>We care of <span>Your Plant</span></h2>
-        <img src={arrows} className='about_arrow'/>
+        <img src={arrows} className='about_arrow' alt='arrow about' />
       </div>
 
       <div className='about_card'>
@@ -26,12 +26,12 @@ export default function About() {
       </div>
 
       <div className='about_img'>
-        <img src={plc01} alt="plc01" className='about_img_plc1'/>
-        <img src={plc02} alt="plc02" className='about_img_plc2'/>
+        <img src={plc01} alt="plc01" className='about_img_plc1' />
+        <img src={plc02} alt="plc02" className='about_img_plc2' />
       </div>
-      
-      <img src={wave_bottom} alt="wave_bottom" className='about_wave_bottom'/>
-      
+
+      <img src={wave_bottom} alt="wave_bottom" className='about_wave_bottom' />
+
     </div>
   )
 }

@@ -4,20 +4,13 @@ import Box from '@mui/material/Box';
 import Toolbar from '@mui/material/Toolbar';
 import Typography from '@mui/material/Typography';
 import Container from '@mui/material/Container';
-import Button from '@mui/material/Button';
 import Drawer from '@mui/material/Drawer';
 import { drawerMenu } from './drawerMenu';
 import { Squash as Hamburger } from 'hamburger-react';
 import NavegationIcons from '../navegation-icons/NavegationIcons';
-import { menu } from '../../utils/constants/menu';
 import NavTabs from '../nav-tabs/NavTabs';
 import logo1 from '../../assets/img/logo01.png'
 import './appmenu.css'
-
-
-
-const pages = ['Products', 'Pricing', 'Blog'];
-const settings = ['Profile', 'Account', 'Dashboard', 'Logout'];
 
 
 const AppMenu = () => {
@@ -35,30 +28,6 @@ const AppMenu = () => {
 
     setState({ ...state, [anchor]: open });
   };
-  const [anchorElNav, setAnchorElNav] = useState(null);
-  const [anchorElUser, setAnchorElUser] = useState(null);
-
-  const handleOpenNavMenu = (event) => {
-    setAnchorElNav(event.currentTarget);
-  };
-  const handleOpenUserMenu = (event) => {
-    setAnchorElUser(event.currentTarget);
-  };
-
-  const handleCloseNavMenu = () => {
-    setAnchorElNav(null);
-  };
-
-  const handleCloseUserMenu = () => {
-    setAnchorElUser(null);
-  };
-
-  function a11yProps(index) {
-    return {
-      id: `simple-tab-${index}`,
-      'aria-controls': `simple-tabpanel-${index}`,
-    };
-  }
 
   return (
     <Box>
@@ -71,7 +40,7 @@ const AppMenu = () => {
               component="div"
               sx={{ mr: 2, display: { xs: 'none', md: 'flex' } }}
             >
-              <img src={logo1} style={{width: '230px'}} />
+              <img src={logo1} style={{ width: '230px' }} alt="logo" />
             </Typography>
 
             <Box sx={{ flexGrow: 1, display: { xs: 'flex', md: 'none' } }}>
@@ -90,7 +59,7 @@ const AppMenu = () => {
               component="div"
               sx={{ flexGrow: 1, display: { xs: 'flex', md: 'none' } }}
             >
-              <img src={logo1} style={{width: '160px'}} />
+              <img src={logo1} style={{ width: '160px' }} alt="logo" />
             </Typography>
             <Box sx={{ flexGrow: 1, display: { xs: 'none', md: 'flex' } }}>
               <NavTabs />
