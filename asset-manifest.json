@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/landing-page-holberton/static/css/main.7a1847d1.css",
-    "main.js": "/landing-page-holberton/static/js/main.98c41230.js",
+    "main.css": "/landing-page-holberton/static/css/main.444abea2.css",
+    "main.js": "/landing-page-holberton/static/js/main.8eac7f8c.js",
     "static/js/787.f0fd0343.chunk.js": "/landing-page-holberton/static/js/787.f0fd0343.chunk.js",
     "static/media/background04.png": "/landing-page-holberton/static/media/background04.8fd9aaecee7bc0a39404.png",
     "static/media/plc01.png": "/landing-page-holberton/static/media/plc01.9c278d4f7eca59c25e9d.png",
@@ -19,18 +19,19 @@
     "static/media/user.png": "/landing-page-holberton/static/media/user.7b5db0e768e048f38130.png",
     "static/media/arrows01.png": "/landing-page-holberton/static/media/arrows01.5e402e4205d7aa44b520.png",
     "static/media/background03.jpg": "/landing-page-holberton/static/media/background03.584839d2f1958ed2f580.jpg",
+    "static/media/logo03.png": "/landing-page-holberton/static/media/logo03.bb2792792e1419cf60f3.png",
     "static/media/icon-target.png": "/landing-page-holberton/static/media/icon-target.36ecf5c6632b18f73b95.png",
     "static/media/revicons.eot": "/landing-page-holberton/static/media/revicons.a77de540a38981833f9e.eot",
     "static/media/card04.jpeg": "/landing-page-holberton/static/media/card04.bd82404de880d7f1cbf3.jpeg",
     "static/media/revicons.ttf": "/landing-page-holberton/static/media/revicons.57fd05d4ae650374c8de.ttf",
     "static/media/revicons.woff": "/landing-page-holberton/static/media/revicons.e8746a624ed098489406.woff",
     "index.html": "/landing-page-holberton/index.html",
-    "main.7a1847d1.css.map": "/landing-page-holberton/static/css/main.7a1847d1.css.map",
-    "main.98c41230.js.map": "/landing-page-holberton/static/js/main.98c41230.js.map",
+    "main.444abea2.css.map": "/landing-page-holberton/static/css/main.444abea2.css.map",
+    "main.8eac7f8c.js.map": "/landing-page-holberton/static/js/main.8eac7f8c.js.map",
     "787.f0fd0343.chunk.js.map": "/landing-page-holberton/static/js/787.f0fd0343.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.7a1847d1.css",
-    "static/js/main.98c41230.js"
+    "static/css/main.444abea2.css",
+    "static/js/main.8eac7f8c.js"
   ]
 }
