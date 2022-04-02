@@ -9,7 +9,8 @@ export default function NavTabs() {
 
   const buildRouteName = (route) => {
     if (typeof route === 'string') {
-      return `#${route.slice(1)}`;
+      const basePath = route.slice(1);
+      return `#${basePath}`;
     }
   }
 

@@ -1,0 +1,16 @@
+.leaflet-container {
+  height: 250px;
+  margin-top: 50px;
+}
+.leaflet-popup-content {
+  width: 130px;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+}
+
+.leaflet-popup-content .text-pupup {
+  margin: 0 0 0 3px;
+  padding: 0;
+  line-height: normal;
+}
