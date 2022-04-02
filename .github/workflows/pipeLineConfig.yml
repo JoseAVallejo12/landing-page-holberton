@@ -1,6 +1,6 @@
 # This is a basic workflow to help you get started with Actions
 
-name: build and deploy
+name: Deploy to Github Pages
 
 # Controls when the workflow will run
 on:
@@ -9,20 +9,19 @@ on:
     branches: [ master ]
 
 jobs:
-  build-and-deploy:
-    concurrency: ci-${{ github.ref }} # Recommended if you intend to make multiple deployments in quick succession.
+  deploy:
+    name: Deploying to Github Pages
+
     runs-on: ubuntu-latest
+
     steps:
-      - name: Checkout 🛎️
-        uses: actions/checkout@v3
+      - name: Checkout branch
+        uses: actions/checkout@v2
 
-      - name: Install and Build 🔧 # This example project is built using npm and outputs the result to the 'build' folder. Replace with the commands required to build your project, or remove this step entirely if your site is pre-built.
-        run: |
-          npm ci
-          npm run build
-
-      - name: Deploy 🚀
-        uses: JamesIves/github-pages-deploy-action@v4.2.5
+      - name: Authorizing Github action
         with:
-          branch: gh-pages # The branch the action should deploy to.
-          folder: build # The folder the action should deploy.
+          token: "${{ secrets.GITHUB_TOKEN }}"
+        uses: oleksiyrudenko/gha-git-credentials@v1
+
+      - name: Doploy to GitHub Pages
+        uses: amitsingh-007/deploy-to-github-pages@v1.1
