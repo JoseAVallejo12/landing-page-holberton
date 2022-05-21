@@ -1,10 +1,11 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import Carousel from 'react-multi-carousel'
 import { HeroSlide } from '../../components/hero-slide/HeroSlide';
 import background01 from '../../assets/img/background01.jpg'
 import background02 from '../../assets/img/background02.jpg'
 import 'react-multi-carousel/lib/styles.css';
 import './hero.css'
+import { getHeroInfo } from '../../api/hero/heroService';
 
 const responsive = {
   superLargeDesktop: {
@@ -44,6 +45,11 @@ const data = [
 ]
 
 export default function Hero() {
+  useEffect(() => {
+    getHeroInfo().then(res => {
+      console.log({ res })
+    })
+  }, [])
   return (
     <div className='hero_main'>
       <Carousel
